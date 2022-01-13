@@ -375,16 +375,41 @@ template {
   margin-left: 108px;
 }
 
+.navbar-bottom {
+  background-color: #0A223D;
+}
+
+.navbar-menu {
+  padding-top: 31px;
+  padding-bottom: 31px;
+}
+
 .navbar-menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
   padding: 0;
   list-style-type: none;
   text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .navbar-menu__link {
   text-decoration: none;
   color: #ffffff;
+}
+
+.logo {
+  width: 177px;
 }
 
 .search {
