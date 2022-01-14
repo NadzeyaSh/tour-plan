@@ -518,19 +518,6 @@ template {
   .navbar__search, .navbar-bottom, .navbar__user {
     display: none;
   }
-}
-
-@media (max-width: 576px) {
-  .container {
-    width: 88%;
-  }
-  .navbar-top {
-    padding-top: 22px;
-    padding-bottom: 28.5px;
-  }
-  .navbar-top__menu-button {
-    margin-top: 5px;
-  }
   .menu-button {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -556,6 +543,19 @@ template {
     width: 16px;
     height: 1px;
     background-color: #333333;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 88%;
+  }
+  .navbar-top {
+    padding-top: 22px;
+    padding-bottom: 28.5px;
+  }
+  .navbar-top__menu-button {
+    margin-top: 5px;
   }
   .logo {
     width: 99px;
