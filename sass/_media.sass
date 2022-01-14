@@ -5,34 +5,38 @@
 @media (max-width: 992px) 
   .container
     max-width: 700px
+  .logo
+      width: 132px
+
   .navbar
     &__search
       margin-left: auto
-    &-menu
-      &__list
-        font-size: 12px
-        line-height: 15px
-    
-
-@media (max-width: 767px)
-  .container
-    max-width: 576px
-    width: 92%
-  .navbar
+      
     &-top
       padding-top: 30px
       padding-bottom: 30px
     &-menu
       padding-top: 22px
       padding-bottom: 23px
-     
-  .logo
-      width: 132px
-      &__image
-        width: 100%
+    &-menu
+      &__list
+        font-size: 12px
+        line-height: 15px
   .search
     &__input
-      width: 340px 
+        max-width: 340px 
+    
+
+@media (max-width: 767px)
+  .container
+    max-width: 576px
+    width: 92%
+  .navbar   
+    &__search, &-bottom, &__user
+      display: none
+     
+  
+  
 
 @media (max-width: 576px)
   .container
@@ -41,9 +45,21 @@
     &-top
       padding-top: 28px
       padding-bottom: 28px
-    &__search, &-bottom
-      display: none
+  .menu-button
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    width: 16px
+    height: 11px
+    padding: 0
+    border: none
+    background-color: $light
+    cursor: pointer
+    &__line
+      width: 16px
+      height: 1px
+      background-color: $text-color
+  
   .logo
     width: 99px
-  .user
-    display: none

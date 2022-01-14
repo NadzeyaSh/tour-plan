@@ -13,6 +13,10 @@ body {
   margin: auto;
 }
 
+img {
+  max-width: 100%;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -370,6 +374,10 @@ template {
   padding-bottom: 40px;
 }
 
+.navbar-top__menu-button {
+  display: none;
+}
+
 .navbar__search {
   margin-right: auto;
   margin-left: 108px;
@@ -476,19 +484,11 @@ template {
   .container {
     max-width: 700px;
   }
+  .logo {
+    width: 132px;
+  }
   .navbar__search {
     margin-left: auto;
-  }
-  .navbar-menu__list {
-    font-size: 12px;
-    line-height: 15px;
-  }
-}
-
-@media (max-width: 767px) {
-  .container {
-    max-width: 576px;
-    width: 92%;
   }
   .navbar-top {
     padding-top: 30px;
@@ -498,14 +498,22 @@ template {
     padding-top: 22px;
     padding-bottom: 23px;
   }
-  .logo {
-    width: 132px;
-  }
-  .logo__image {
-    width: 100%;
+  .navbar-menu__list {
+    font-size: 12px;
+    line-height: 15px;
   }
   .search__input {
-    width: 340px;
+    max-width: 340px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 576px;
+    width: 92%;
+  }
+  .navbar__search, .navbar-bottom, .navbar__user {
+    display: none;
   }
 }
 
@@ -517,14 +525,34 @@ template {
     padding-top: 28px;
     padding-bottom: 28px;
   }
-  .navbar__search, .navbar-bottom {
-    display: none;
+  .menu-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 16px;
+    height: 11px;
+    padding: 0;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+  .menu-button__line {
+    width: 16px;
+    height: 1px;
+    background-color: #333333;
   }
   .logo {
     width: 99px;
-  }
-  .user {
-    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
