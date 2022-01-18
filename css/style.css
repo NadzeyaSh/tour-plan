@@ -559,6 +559,7 @@ template {
   color: #ffffff;
   background-color: #EC1F46;
   border-radius: 3px;
+  max-height: 20px;
 }
 
 .description {
@@ -589,7 +590,7 @@ template {
   line-height: 18px;
 }
 
-.rating__counter--small {
+.rating__small {
   font-size: 10px;
   line-height: 13px;
 }
@@ -679,6 +680,29 @@ template {
   }
   .logo {
     width: 99px;
+  }
+  .hotel {
+    padding-top: 5px;
+  }
+  .hotel-info__text {
+    width: 95%;
+  }
+  .hotel-name {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-top: 10px;
+  }
+  .rating {
+    display: none;
+  }
+  .offer {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .stars {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
