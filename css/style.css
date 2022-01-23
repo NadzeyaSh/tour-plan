@@ -626,8 +626,14 @@ template {
 
 .swiper {
   width: 100%;
-  height: 450px;
+  height: 100%;
   border-radius: 8px;
+}
+
+.swiper-slide__image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
 }
 
 .swiper-wrapper {
@@ -649,6 +655,7 @@ template {
 
 .slider {
   width: 728px;
+  height: 450px;
   position: relative;
 }
 
@@ -782,15 +789,20 @@ template {
   height: 213px;
 }
 
+.map__div {
+  border-radius: 10px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
   }
   .slider {
-    width: 600px;
+    width: 590px;
   }
   .swiper-slide__image {
     height: 100%;
+    width: 100%;
   }
 }
 
@@ -844,7 +856,7 @@ template {
     width: fit-content;
   }
   .booking {
-    max-width: 340px;
+    width: 340px;
     padding-right: 22px;
     padding-left: 23px;
   }
@@ -888,8 +900,9 @@ template {
     background-color: #333333;
   }
   .slider {
-    width: 278px;
-    height: 179px;
+    width: 100%;
+  }
+  .slider-hotel {
     margin-bottom: 20px;
   }
   .swiper {
@@ -913,9 +926,10 @@ template {
   }
   .booking__button {
     padding: 13px 54px;
+    width: 100%;
   }
   .map {
-    width: 280px;
+    width: 100%;
   }
   .map__div {
     width: 100%;
@@ -958,6 +972,48 @@ template {
   .stars {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
+  }
+  .slider {
+    height: 179px;
+  }
+  .slider-hotel {
+    margin-bottom: 20px;
+  }
+  .slider-button {
+    width: 11.5px;
+    height: 12px;
+  }
+  .slider-button--prev {
+    margin-left: 6px;
+  }
+  .slider-button--next {
+    margin-right: 7px;
+  }
+  .hotel-right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hotel-info {
+    padding-bottom: 20px;
+    margin-bottom: 18px;
+  }
+  .booking {
+    padding-right: 21px;
+    padding-left: 22px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .booking__button {
+    padding: 13px 54px;
+  }
+  .map {
+    height: 173px;
+  }
+  .map__div {
+    width: 100%;
+    height: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
