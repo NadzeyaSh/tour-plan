@@ -729,17 +729,26 @@ template {
 .booking__pricetag {
   font-weight: 800;
   font-size: 24px;
-  line-height: 29px;
+  line-height: 32px;
 }
 
 .booking__per-room {
   font-size: 12px;
-  line-height: 16px;
+  line-height: 11px;
 }
 
 .booking__text {
   font-size: 12px;
   line-height: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .booking__room {
@@ -860,6 +869,9 @@ template {
     padding-right: 22px;
     padding-left: 23px;
   }
+  .booking__pricetag {
+    line-height: 29px;
+  }
   .map {
     height: 210px;
   }
@@ -927,6 +939,9 @@ template {
   .booking__button {
     padding: 13px 54px;
     width: 100%;
+  }
+  .booking__pricetag {
+    line-height: 32px;
   }
   .map {
     width: 100%;
@@ -1007,6 +1022,9 @@ template {
   }
   .booking__button {
     padding: 13px 54px;
+  }
+  .booking__text {
+    margin-bottom: 8px;
   }
   .map {
     height: 173px;
