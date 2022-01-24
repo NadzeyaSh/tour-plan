@@ -30,6 +30,51 @@
     flex-direction: column
     justify-content: space-between
     align-items: center
+  &-slider
+    width: 728px
+    height: 450px
+    position: relative
+    border-radius: 8px
+    &__item
+      width: 100%
+      height: 100%
+      overflow: hidden
+
+      &::after
+        position: absolute
+        content: ""
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        right: 0
+        background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
+        z-index: 10
+
+    &__button
+      width: 30px
+      height: 30px
+      transform: translateY(-50%)
+      z-index: 99
+      cursor: pointer
+      position: absolute
+      border: none
+      // background-color: transparent
+      background-repeat: no-repeat
+      background-position: center
+      background-size: 10px
+      background-color: transparent
+        
+      &--prev
+        top: 50%
+        margin-left: 16px
+        background-image: url(../img/stroke-prev.svg)
+          
+      &--next
+        top: 50%
+        right: 0
+        margin-right: 18px
+        background-image: url(../img/stroke-next.svg)
    
 .stars
   flex-basis: 100%
@@ -66,54 +111,15 @@
     line-height: 13px
 
 .swiper 
-  width: 100%
-  height: 100%
-  border-radius: 8px
+  
   &-slide
     &__image
       object-fit: cover
       width: 100%
   &-wrapper
     position: relative
-  &::after
-    position: absolute
-    content: ""
-    width: 100%
-    height: 100%
-    top: 0
-    left: 0
-    right: 0
-    background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
-    z-index: 10
 
-.slider
-  width: 728px
-  height: 450px
-  position: relative
-  &-button
-    width: 30px
-    height: 30px
-    transform: translateY(-50%)
-    z-index: 99
-    cursor: pointer
-    position: absolute
-    border: none
-    // background-color: transparent
-    background-repeat: no-repeat
-    background-position: center
-    background-size: 10px
-    background-color: transparent
-      
-    &--prev
-      top: 50%
-      margin-left: 16px
-      background-image: url(../img/stroke-prev.svg)
-        
-    &--next
-      top: 50%
-      right: 0
-      margin-right: 18px
-      background-image: url(../img/stroke-next.svg)
+
 
 .booking
   width: 350px
@@ -178,4 +184,4 @@
   height: 213px
   &__div
     border-radius: 10px
-    
+    overflow: hidden
