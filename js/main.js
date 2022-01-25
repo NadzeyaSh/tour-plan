@@ -1,4 +1,4 @@
-const swiper = new Swiper(".hotel-slider", {
+const hotelSlider = new Swiper(".hotel-slider", {
   // Optional parameters
   loop: true,
 
@@ -12,20 +12,20 @@ const swiper = new Swiper(".hotel-slider", {
     onlyInViewport: false,
   },
 });
-// const sliderReviews = new Swiper(".reviews-slider", {
-//   // Optional parameters
-//   loop: true,
+const sliderReviews = new Swiper(".reviews-slider", {
+  // Optional parameters
+  loop: true,
 
-//   // Navigation arrows
-//   navigation: {
-//     nextEl: ".slider-button--next",
-//     prevEl: ".slider-button--prev",
-//   },
-//   keyboard: {
-//     enabled: true,
-//     onlyInViewport: false,
-//   },
-// });
+  // Navigation arrows
+  navigation: {
+    nextEl: ".reviews-slider__button--next",
+    prevEl: ".reviews-slider__button--prev",
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+});
 
 // Функция ymaps.ready() будет вызвана, когда
 // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
