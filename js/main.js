@@ -42,4 +42,20 @@ function init() {
     // от 0 (весь мир) до 19.
     zoom: 15,
   });
+  (myPlacemark1 = new ymaps.Placemark(
+    [7.890867336450892, 98.29475612623534],
+    {
+      // Свойства.
+      // Содержимое иконки, балуна и хинта.
+      iconContent: "Grand Hilton Hotel",
+      balloonContent: "Балун",
+      hintContent: "Стандартный значок метки",
+    },
+    {
+      // Опции.
+      // Стандартная фиолетовая иконка.
+      preset: "twirl#violetIcon",
+    }
+  )),
+    myMap.geoObjects.add(myPlacemark1);
 }
