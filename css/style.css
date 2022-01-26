@@ -917,7 +917,6 @@ template {
   margin: 45px auto 0;
   background-color: #fff;
   border-radius: 8px;
-  padding: 0 95px 30px 99px;
 }
 
 .reviews-slider__profile {
@@ -970,7 +969,7 @@ template {
 }
 
 .reviews-slider__text {
-  width: 731px;
+  width: 537px;
   font-size: 12px;
   line-height: 160%;
   text-align: justify;
@@ -1105,6 +1104,10 @@ template {
     height: 100%;
     width: 100%;
   }
+  .card {
+    width: 230px;
+    height: 230px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1181,6 +1184,20 @@ template {
     width: 579px;
     padding: 0 60px 30px 64px;
   }
+  .activities {
+    padding-bottom: 70px;
+  }
+  .activities-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .activities__card {
+    margin-bottom: 20px;
+  }
+  .card {
+    width: 339px;
+    height: 255px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1244,6 +1261,14 @@ template {
   .booking__pricetag {
     line-height: 32px;
   }
+  .activities {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  .activities-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .map {
     width: 100%;
   }
@@ -1272,6 +1297,13 @@ template {
   .search__input {
     width: 280px;
     padding-left: 20px;
+  }
+  .card {
+    width: 48%;
+  }
+  .card__title {
+    font-size: 18px;
+    line-height: 23px;
   }
 }
 
@@ -1379,6 +1411,12 @@ template {
     right: 0;
     margin-right: 38px;
     background-image: url(../img/arrow-next.svg);
+  }
+  .activities__card {
+    margin: 0 auto 20px;
+  }
+  .card {
+    width: 339px;
   }
 }
 /*# sourceMappingURL=style.css.map */
