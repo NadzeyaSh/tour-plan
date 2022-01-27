@@ -1,8 +1,11 @@
 @media (max-width: 1200px) 
   .container
     max-width: 960px
+  .hotel
+    &-slider
+      width: 590px
+
   .swiper
-    width: 590px
     &-slide
       &__image
         height: 100%
@@ -10,6 +13,10 @@
   .card
     width: 230px
     height: 230px
+  .reviews
+    &-slider
+      &__item
+        width: 700px
   
 @media (max-width: 992px) 
   .container
@@ -39,13 +46,15 @@
       max-width: 340px 
   .hotel
     padding-bottom: 60px
+    &__slider
+      margin-bottom: 30px
+
     &-grid
       flex-direction: column
     &-right
       flex-direction: row
   .swiper
     width: 700px
-    margin-bottom: 30px
    
  
   .booking    
@@ -59,16 +68,32 @@
   .newsletter
     padding-top: 92px
     padding-bottom: 93px
+    &-wrapper
+      width: 100%
   .reviews
-    padding-bottom: 60px
+    padding-bottom: 18px
     &-title
       font-size: 30px
       line-height: 38px
       margin-bottom: 50px
     &-slider
       &__item
-        width: 579px
+        // width: 579px
+        width: 100%
         padding: 0 60px 30px 64px
+        &:before, &::after
+          display: none
+      &__profile
+        margin-bottom: 32px
+      &__text
+        margin: 0 
+      &__button
+        &--prev
+          top: 45%
+          margin-left: 0
+        &--next
+          top: 45%
+          margin-right: 0
   .activities
     padding-bottom: 70px
     &-wrapper
@@ -109,8 +134,11 @@
   
   .swiper
     width: 100%
-    margin-bottom: 20px
   .hotel
+    &-slider
+      &__item
+        margin-bottom: 20px
+
     &-right
       flex-direction: column
     &-info
@@ -237,17 +265,21 @@
     &-slider
       &__item
         padding: 0 29px 36px 33px
+        width: 100%
       &__button
         &--prev
-          top: 10%
+          top: 8%
           margin-left: 35px
           background-image: url(../img/arrow-prev.svg)
         &--next
-          top: 10%
+          top: 8%
           right: 0
           margin-right: 38px
           background-image: url(../img/arrow-next.svg)
   .activities
+    &-title
+      font-size: 18px
+      line-height: 23px
     &__card
       margin: 0 auto 20px
   .card
