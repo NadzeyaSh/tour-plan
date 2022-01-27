@@ -60,5 +60,4 @@ function init() {
   )),
     myMap.geoObjects.add(myPlacemark1);
 }
-$('.parallax-window').parallax({imageSrc: '../img/newsletter-bg.jpg'});
-
+$(".parallax-window").parallax({ imageSrc: "./img/newsletter-bg.jpg" });
