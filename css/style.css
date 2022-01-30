@@ -952,6 +952,7 @@ template {
 }
 
 .packages__text {
+  margin-bottom: 11px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1656,15 +1657,15 @@ template {
     width: 100%;
   }
   .reviews {
-    padding-bottom: 18px;
+    padding-bottom: 60px;
   }
-  .reviews-title {
+  .reviews__title {
     font-size: 30px;
     line-height: 38px;
     margin-bottom: 50px;
   }
   .reviews-slider__item {
-    width: 100%;
+    max-width: 579px;
     padding: 0 60px 30px 64px;
   }
   .reviews-slider__item:before, .reviews-slider__item::after {
@@ -1685,7 +1686,7 @@ template {
     margin-right: 0;
   }
   .activities {
-    padding-bottom: 70px;
+    padding-bottom: 50px;
   }
   .activities-wrapper {
     -ms-flex-wrap: wrap;
@@ -1697,6 +1698,52 @@ template {
   .card {
     width: 339px;
     height: 255px;
+  }
+  .footer {
+    padding-top: 73px;
+    padding-bottom: 33px;
+  }
+  .footer__input {
+    -ms-flex-preferred-size: 47%;
+        flex-basis: 47%;
+  }
+  .footer-wrapper {
+    grid-gap: 47px;
+    margin-bottom: 63px;
+  }
+  .footer__logo {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+    width: 95px;
+  }
+  .footer__categories {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+  .footer__information {
+    grid-column: span 2;
+  }
+  .footer__social {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    grid-column: span 3;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .footer__contact {
+    grid-column: span 4;
+  }
+  .footer__contact-form {
+    -ms-grid-row: 4;
+    grid-row: 4;
+    grid-column: span 3;
   }
 }
 
@@ -1846,6 +1893,22 @@ template {
   .card__title {
     font-size: 18px;
     line-height: 23px;
+  }
+  .footer-wrapper {
+    -ms-grid-columns: (minmax(min-content, 1fr))[3];
+        grid-template-columns: repeat(3, minmax(-webkit-min-content, 1fr));
+        grid-template-columns: repeat(3, minmax(min-content, 1fr));
+  }
+  .footer__information {
+    -ms-grid-column: 2;
+    grid-column: 2;
+  }
+  .footer__contact-form {
+    grid-column: span 4;
+  }
+  .footer__input {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 

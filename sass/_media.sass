@@ -4,7 +4,6 @@
   .hotel
     &-slider
       width: 590px
-
   .swiper
     &-slide
       &__image
@@ -34,12 +33,10 @@
     max-width: 700px
   .logo
       width: 132px
-
   .navbar
     &__search
       margin-left: auto
-      margin-right: 74px
-      
+      margin-right: 74px      
     &-top
       padding-top: 30px
       padding-bottom: 30px
@@ -51,7 +48,6 @@
         font-size: 12px
         line-height: 15px
         justify-content: space-around
-
   .search
     &__input
       max-width: 340px 
@@ -59,15 +55,12 @@
     padding-bottom: 60px
     &__slider
       margin-bottom: 30px
-
     &-grid
       flex-direction: column
     &-right
       flex-direction: row
   .swiper
-    width: 700px
-   
- 
+    width: 700px 
   .booking    
     width: 340px
     padding-right: 22px
@@ -93,15 +86,15 @@
     &-wrapper
       width: 100%
   .reviews
-    padding-bottom: 18px
-    &-title
+    padding-bottom: 60px
+    &__title
       font-size: 30px
       line-height: 38px
       margin-bottom: 50px
     &-slider
       &__item
-        // width: 579px
-        width: 100%
+        max-width: 579px
+        // width: 100%
         padding: 0 60px 30px 64px
         &:before, &::after
           display: none
@@ -117,7 +110,7 @@
           top: 45%
           margin-right: 0
   .activities
-    padding-bottom: 70px
+    padding-bottom: 50px
     &-wrapper
       flex-wrap: wrap
     &__card
@@ -125,6 +118,37 @@
   .card
     width: 339px
     height: 255px
+  .footer
+    padding-top: 73px
+    padding-bottom: 33px
+    &__input
+      flex-basis: 47%
+    &-wrapper
+      // grid-gap: 32px
+      grid-gap: 47px
+      margin-bottom: 63px
+    &__logo
+      grid-row: 1/2
+      align-self: start      
+      width: 95px
+    &__categories
+      grid-row: 2/3
+    &__information
+      grid-column: span 2
+    &__social
+      grid-row: 1/2
+      grid-column: span 3
+      align-self: center
+    &__contact      
+      grid-column: span 4
+      &-form
+        grid-row: 4
+        grid-column: span 3
+ 
+    
+ 
+
+        
 
 
  
@@ -243,7 +267,16 @@
     &__title
       font-size: 18px
       line-height: 23px 
-        
+  .footer
+    &-wrapper
+      grid-template-columns: repeat(3, minmax(min-content, 1fr))
+    &__information
+      grid-column: 2   
+    &__contact
+      &-form
+        grid-column: span 4
+    &__input
+      flex-basis: 100%
 
 @media (max-width: 576px)
   .container
