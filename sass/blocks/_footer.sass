@@ -5,12 +5,14 @@
   color: $footer-text-color
   &-wrapper
     display: grid
-    grid-template-columns: repeat(4, minmax(250px, 1fr))
+    grid-template-columns: repeat(4, minmax(min-content, 1fr))
+    grid-auto-rows: minmax(40px,min-content)
     grid-gap: 20px
     margin-bottom: 94px
+    align-items: start
   &__logo
-    grid-row: 1/4
-    align-self: stretch    
+    grid-row: 1/3
+    align-self: center    
     width: 166px
   &__categories
     grid-row: 1/4
@@ -36,6 +38,8 @@
     font-weight: normal
     font-size: 14px
     line-height: 160%
+    &--mb-2
+      margin-bottom: 26px
   &__link
     text-decoration: none
     color: inherit
@@ -50,7 +54,8 @@
       min-width: 83px
   &__contact
     grid-column: 1/3
-  &__text
+    padding-top: 12px
+  &__text    
     font-size: 14px
     line-height: 160%
     color: $footer-text-color

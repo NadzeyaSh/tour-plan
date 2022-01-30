@@ -169,7 +169,7 @@
   .packages
     &-wrapper
       display: grid
-      grid-template-rows: repeat(3,400px)
+      // grid-template-rows: repeat(3,400px)
       grid-template-columns: 50% 50%
       grid-gap: 10px
     &__card
@@ -177,6 +177,9 @@
         grid-column: 1 / 2
       &:nth-child(2)
         grid-column: 2 / 3  
+      &:last-child
+        display: none
+        
     &__offer    
       padding: 8px 12px 7px 11px
       font-weight: 600
@@ -356,6 +359,3 @@
       margin: 0 auto 20px
   .card
     width: 339px
-
-
-  
