@@ -1800,6 +1800,7 @@ template {
   }
   .navbar-bottom--visible {
     display: block;
+    overflow: auto;
   }
   .navbar-menu {
     padding-top: 31px;
