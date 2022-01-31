@@ -1554,6 +1554,10 @@ template {
   max-width: 136px;
 }
 
+.footer__message {
+  resize: none;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
