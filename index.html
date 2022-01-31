@@ -19,14 +19,17 @@
     <header class="navbar navbar--mobile-fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo">
+          <a href="index.html" class="logo">
             <img
               src="img/horizontal-logo.svg"
               class="logo__image"
               alt="Logo: Best Tour Plan"
             />
           </a>
-          <form action="#" class="search navbar__search navbar__search--mobile-hidden">
+          <form
+            action="#"
+            class="search navbar__search navbar__search--mobile-hidden"
+          >
             <input
               type="text"
               class="search__input"
@@ -36,7 +39,10 @@
               <img src="img/search-icon.svg" alt="Icon: search" />
             </button>
           </form>
-          <a href="#" class="user navbar__user navbar__user navbar__user--mobile-hidden">
+          <a
+            href="#"
+            class="user navbar__user navbar__user navbar__user--mobile-hidden"
+          >
             <img
               src="img/avatar.jpg"
               alt="Avatar: Nathan"
@@ -58,26 +64,38 @@
         <div class="container">
           <nav class="navbar-menu">
             <ul class="navbar-menu__list">
-              <li class="navbar-menu__item navbar-menu__item--mobile-visible"><a href="#" class="user navbar__user navbar__user--mobile-visible">
-                <img
-                  src="img/avatar.jpg"
-                  alt="Avatar: Nathan"
-                  class="user__avatar"
-                />
-                <span class="user__name user__name--mobile-visible">Nathan</span>
-              </a>
-              <!-- /.user --></li>
-              <li class="navbar-menu__item navbar-menu__item--mobile-visible"> <form action="#" class="search navbar__search navbar__search--mobile-visible">
-                <input
-                  type="text"
-                  class="search__input"
-                  placeholder="Search Location"
-                />
-                <button class="search__button">
-                  <img src="img/search-icon.svg" alt="Icon: search" />
-                </button>
-              </form></li>
-             
+              <li class="navbar-menu__item navbar-menu__item--mobile-visible">
+                <a
+                  href="#"
+                  class="user navbar__user navbar__user--mobile-visible"
+                >
+                  <img
+                    src="img/avatar.jpg"
+                    alt="Avatar: Nathan"
+                    class="user__avatar"
+                  />
+                  <span class="user__name user__name--mobile-visible"
+                    >Nathan</span
+                  >
+                </a>
+                <!-- /.user -->
+              </li>
+              <li class="navbar-menu__item navbar-menu__item--mobile-visible">
+                <form
+                  action="#"
+                  class="search navbar__search navbar__search--mobile-visible"
+                >
+                  <input
+                    type="text"
+                    class="search__input"
+                    placeholder="Search Location"
+                  />
+                  <button class="search__button">
+                    <img src="img/search-icon.svg" alt="Icon: search" />
+                  </button>
+                </form>
+              </li>
+
               <li class="navbar-menu__item">
                 <a href="#" class="navbar-menu__link">All Deals</a>
               </li>
@@ -256,7 +274,7 @@
       </div>
       <!-- /.container -->
     </section>
-    
+
     <section class="newsletter parallax-window">
       <div class="container">
         <div class="newsletter-wrapper">
@@ -264,11 +282,16 @@
             subscribe to our
             <span class="newsletter-title__strong">Newsletter</span>
           </h2>
-          <form action="#" class="search newsletter__search">
+          <form
+            action="send.php"
+            method="post"
+            class="search newsletter__search"
+          >
             <input
               type="text"
               class="search__input newsletter__input"
               placeholder="Your email address"
+              name="email"
             />
             <button class="search__button">Send</button>
           </form>
@@ -514,13 +537,22 @@
           <div class="footer__social">
             <h3 class="footer__title footer__title-social">Social Network</h3>
             <div class="footer__social-links">
-              <a href="#" class="footer__link"
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="footer__link"
                 ><img src="img/facebook.svg" alt="Icon: Facebook"
               /></a>
-              <a href="#" class="footer__link"
+              <a
+                href="https://www.youtube.com/"
+                target="_blank"
+                class="footer__link"
                 ><img src="img/youtube.svg" alt="Icon: Youtube"
               /></a>
-              <a href="#" class="footer__link"
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="footer__link"
                 ><img src="img/instagram.svg" alt="Icon: Instagram"
               /></a>
             </div>
@@ -566,39 +598,50 @@
                   <img src="img/phone.svg" alt="Icon: Phone" />
                 </div>
                 <!-- /.footer__icon-wrapper -->
-                <a class="footer__link" href="#"
-                  >Tel (business hours) : 269 1500<br />
-                  Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00
-                  pm)<br />
-                  Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</a
-                >
+                <div class="a-wrapper">
+                  Tel (business hours) :
+                  <a class="footer__link" href="tel:2691500">269 1500</a
+                  ><br />Tel (hotline) Monday - Saturday:
+                  <a class="footer__link" href="tel:52566138">52-56-61-38</a>
+                  (08:00 am – 20:00 pm)<br />
+                  Tel (hotline) Sunday:
+                  <a class="footer__link" href="tel:52566138">52-56-61-38</a>
+                  (08:00 am – 14:00 pm)
+                </div>
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
                   <img src="img/email.svg" alt="Icon: Email" />
                 </div>
                 <!-- /.footer__icon-wrapper -->
-                <a class="footer__link" href="#">cherly.lawson@example.com</a>
+                <a class="footer__link" href="mailto:cherly.lawson@example.com"
+                  >cherly.lawson@example.com</a
+                >
               </li>
             </ul>
           </div>
           <!-- /.footer__list -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-            <form action="#" class="footer__form">
+            <form action="send.php" method="post" class="footer__form">
               <input
                 type="text"
                 class="input footer__input"
                 placeholder="Your Full Name*"
+                name="name"
               />
               <input
                 type="text"
                 class="input footer__input"
                 placeholder="Phone Number*"
+                name="phone"
               />
-              <textarea class="footer__message" cols="30" rows="6">
-Message</textarea
-              >
+              <textarea
+                class="footer__message"
+                cols="30"
+                name="message"
+                placeholder="Message"
+              ></textarea>
               <button type="submit" class="button footer__button">Send</button>
               <span class="footer__required">* Required Fields</span>
             </form>
