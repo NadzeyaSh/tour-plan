@@ -1,5 +1,5 @@
 .navbar
-  border-color: #fff
+  background-color: #fff
   &-top
     display: flex
     align-items: center
@@ -16,6 +16,10 @@
   &-menu
     padding-top: 31px
     padding-bottom: 31px
+    &__item
+      &--mobile        
+        &-visible
+          display: none
     &__list
       display: flex
       justify-content: space-between
@@ -30,6 +34,12 @@
     &__link
       text-decoration: none
       color: $light
+  &__search
+      &--mobile
+        &-hidden
+          display: block
+        &-visible
+          display: flex
 .logo
   width: 177px
 .search
@@ -46,7 +56,8 @@
     border: none
     font-size: 12px
     line-height: 15px
-    color: $text-color    
+    color: $text-color  
+    
   &__button
     position: absolute
     top: 0

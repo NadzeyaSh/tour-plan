@@ -143,12 +143,7 @@
       grid-column: span 4
       &-form
         grid-row: 4
-        grid-column: span 3
- 
-    
- 
-
-        
+        grid-column: span 3   
 
 
  
@@ -156,12 +151,50 @@
     
 
 @media (max-width: 767px)
+  body
+    padding-top: 78px
   .container
     max-width: 576px
     width: 92%
   .navbar   
-    &__search, &-bottom, &__user
+    &--mobile
+      &-fixed
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        z-index: 99
+    &-bottom
       display: none
+      position: fixed
+      top: 78px
+      bottom: 0
+      left: 0
+      right: 0
+      &--visible
+        display: block
+    &-menu
+      padding-top: 31px
+      &__list      
+        flex-direction: column
+      &__item
+        margin-bottom: 20px
+        &--mobile                 
+          &-visible
+            display: flex    
+    &__search
+      &--mobile
+        &-hidden
+          display: none
+        &-visible
+          margin-bottom: 39px
+    &__user
+      &--mobile
+        &-visible
+          margin-bottom: 55px   
+        &-hidden
+          display: none 
+   
   .menu-button
     display: flex
     flex-direction: column
