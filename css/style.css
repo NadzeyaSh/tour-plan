@@ -1779,7 +1779,7 @@ template {
   .navbar-bottom {
     display: none;
     position: fixed;
-    top: 78px;
+    top: 68px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -1808,13 +1808,29 @@ template {
     display: none;
   }
   .navbar__search--mobile-visible {
-    margin-bottom: 39px;
+    margin-bottom: 19px;
   }
   .navbar__user--mobile-visible {
-    margin-bottom: 55px;
+    margin-bottom: 7px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .navbar__user--mobile-hidden {
     display: none;
+  }
+  .user__name--mobile-visible {
+    margin: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: none;
+    color: #ffffff;
   }
   .menu-button {
     display: -webkit-box;
