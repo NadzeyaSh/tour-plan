@@ -90,7 +90,7 @@ img {
 
 #phone-error {
   position: absolute;
-  left: 0;
+  left: 50%;
   z-index: 1;
   background-color: #EC1F46;
   border: 1px solid #ffffff;
@@ -98,6 +98,7 @@ img {
   border-radius: 6px;
   padding: 4px 5px;
   color: #ffffff;
+  top: -10px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
