@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://api-maps.yandex.ru/2.1/?apikey=2cb92b0d-62be-4b6b-9e88-acf9433711d5&lang=ru_RU"></script>
   </head>
@@ -19,7 +20,7 @@
     <header class="navbar navbar--mobile-fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="index.html" class="logo">
+          <a href="index.html" class="logo" data-aos="fade-up-right">
             <img
               src="img/horizontal-logo.svg"
               class="logo__image"
@@ -160,7 +161,13 @@
             </p>
           </div>
           <!-- /.hotel-info__text -->
-          <div class="rating hotel-info__rating">
+          <div
+            class="rating hotel-info__rating"
+            data-aos="fade-left"
+            data-aos-delay="100"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-back"
+          >
             <span class="rating__text">User Rattings</span>
             <span class="rating__counter"
               >4.5/<span class="rating__small">5</span></span
@@ -288,6 +295,8 @@
             action="send.php"
             method="post"
             class="search newsletter__search"
+            data-aos="flip-left"
+            data-aos-duration="2000"
           >
             <input
               type="text"
@@ -424,7 +433,14 @@
     </section>
     <section class="activities">
       <div class="container">
-        <h2 class="activities-title">Other Activities</h2>
+        <h2
+          class="activities-title"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
+          Other Activities
+        </h2>
         <div class="activities-wrapper">
           <div class="card activities__card">
             <img
@@ -742,6 +758,7 @@
     <script src="js/parallax.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
