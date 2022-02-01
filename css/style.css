@@ -55,8 +55,49 @@ img {
   color: #ffffff;
 }
 
+.form {
+  position: relative;
+}
+
 .invalid {
   color: #EC1F46;
+}
+
+#name-error {
+  position: absolute;
+  background-color: #EC1F46;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  padding: 4px 5px;
+  z-index: 1;
+  text-align: center;
+  left: 0;
+  top: -10px;
+  color: #ffffff;
+}
+
+#email-error {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  background-color: #EC1F46;
+  border: 1px solid #ffffff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 4px 5px;
+  color: #ffffff;
+}
+
+#phone-error {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  background-color: #EC1F46;
+  border: 1px solid #ffffff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 4px 5px;
+  color: #ffffff;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -1621,6 +1662,7 @@ template {
 .modal__overlay--visible {
   visibility: visible;
   opacity: 1;
+  overflow-y: hidden;
 }
 
 .modal__dialog {
@@ -1644,6 +1686,7 @@ template {
 .modal__dialog--visible {
   visibility: visible;
   opacity: 1;
+  overflow-y: hidden;
 }
 
 .modal__close {
@@ -2175,6 +2218,9 @@ template {
   .footer-bottom__list {
     margin: 0;
   }
+  .modal__dialog {
+    padding: 33px 50px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -2415,6 +2461,15 @@ template {
   }
   .modal__close {
     right: 35px;
+  }
+  .modal__input {
+    padding: 10px 0 10px 13px;
+  }
+  .modal__message {
+    min-width: 250px;
+  }
+  .modal__dialog {
+    padding: 30px 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */

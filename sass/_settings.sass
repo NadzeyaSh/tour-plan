@@ -4,6 +4,7 @@ body
   font-family: 'Mulish', sans-serif
   background-color: $secondary
   color: $text-color
+ 
 .container
   max-width: 1110px
   margin: auto
@@ -39,5 +40,42 @@ img
   border: none
   cursor: pointer
   color: $light
+.form
+  position: relative
 .invalid
   color: $primary
+  
+// label.invalid
+#name-error  
+  position: absolute
+  background-color: $primary
+  border: 1px solid $light
+  border-radius: 6px
+  padding: 4px 5px
+  z-index: 1
+  text-align: center
+  left: 0
+  top: -10px
+  color: $light
+#email-error
+  position: absolute
+  left: 0
+  z-index: 1
+  background-color: $primary
+  border: 1px solid $light
+  text-align: center
+  border-radius: 6px
+  padding: 4px 5px
+  color: $light
+#phone-error 
+  position: absolute
+  left: 0
+  z-index: 1
+  background-color: $primary
+  border: 1px solid $light
+  text-align: center
+  border-radius: 6px
+  padding: 4px 5px
+  color: $light
+
+

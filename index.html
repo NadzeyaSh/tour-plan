@@ -294,12 +294,12 @@
           <form
             action="send.php"
             method="post"
-            class="search newsletter__search"
+            class="form search newsletter__search"
             data-aos="flip-left"
             data-aos-duration="2000"
           >
             <input
-              type="text"
+              type="email"
               class="search__input newsletter__input"
               placeholder="Your email address"
               name="email"
@@ -450,7 +450,7 @@
             of chamarel"
             />
             <h3 class="card__title">The curious corner of chamarel</h3>
-            <button class="card__button">Book Now</button>
+            <button class="card__button" data-toggle="modal">Book Now</button>
           </div>
           <div class="card activities__card">
             <img
@@ -460,7 +460,7 @@
             course"
             />
             <h3 class="card__title">Gymkhana club golf course</h3>
-            <button class="card__button">Book Now</button>
+            <button class="card__button" data-toggle="modal">Book Now</button>
           </div>
           <div class="card activities__card">
             <img
@@ -470,7 +470,7 @@
             trip - full day"
             />
             <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
-            <button class="card__button">Book Now</button>
+            <button class="card__button" data-toggle="modal">Book Now</button>
           </div>
           <div class="card activities__card">
             <img
@@ -480,7 +480,7 @@
             quest"
             />
             <h3 class="card__title">The blue marine discovery quest</h3>
-            <button class="card__button">Book Now</button>
+            <button class="card__button" data-toggle="modal">Book Now</button>
           </div>
           <!-- /.card -->
         </div>
@@ -752,6 +752,7 @@
       <!-- /.modal__overlay -->
     </div>
     <!-- /.modal -->
+    <span class="tooltiptext">Tooltip text</span>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
