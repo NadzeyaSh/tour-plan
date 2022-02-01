@@ -501,18 +501,26 @@ template {
 
 .search__input ::-webkit-input-placeholder {
   color: #BDBDBD;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .search__input :-ms-input-placeholder {
   color: #BDBDBD;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .search__input ::-ms-input-placeholder {
   color: #BDBDBD;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .search__input ::placeholder {
   color: #BDBDBD;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .search__button {
@@ -1587,7 +1595,7 @@ template {
   max-width: 136px;
 }
 
-.description {
+.thankyou-message {
   font-size: 15px;
   margin-bottom: 40px;
 }
