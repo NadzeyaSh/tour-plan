@@ -99,9 +99,12 @@ $(document).ready(function () {
       messages: {
         name: {
           required: "Please specify your name",
-          minlength: "At least 2 symbols required",
+          minlength: "At least 2 numbers required",
         },
-        phone: "Please enter your phone number",
+        phone: {
+          required: "Please enter your phone number",
+          minlength: "At least 12 symbols required",
+        },
         email: {
           required: "We need your email address to contact you",
           email: "Your email address must be in the format of name@domain.com",
@@ -110,7 +113,7 @@ $(document).ready(function () {
     });
   });
 
-  $(".phone").mask("+7(999) 999-9999", {
+  $(".phone").mask("+7(999) 999-99-99", {
     translation: { 9: { pattern: /[0-9*]/ } },
   });
 });
