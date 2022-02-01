@@ -1129,9 +1129,6 @@ template {
 .newsletter__input {
   width: 350px;
   background-color: #fff;
-}
-
-.search__input {
   padding: 19px 75px 18px 33px;
   font-weight: 300;
   font-size: 14px;
