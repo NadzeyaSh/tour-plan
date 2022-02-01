@@ -55,6 +55,10 @@ img {
   color: #ffffff;
 }
 
+.invalid {
+  color: #EC1F46;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1494,6 +1498,10 @@ template {
 }
 
 .footer__input {
+  width: 100%;
+}
+
+.footer__input-group {
   -ms-flex-preferred-size: 47%;
       flex-basis: 47%;
   margin-bottom: 15px;
@@ -1639,7 +1647,7 @@ template {
 }
 
 .modal__title {
-  margin-bottom: 15px;
+  margin: 0;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -1650,16 +1658,17 @@ template {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__message {
   width: 100%;
   min-height: 123px;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__button {
+  margin-top: 15px;
   padding: 18px 65px;
   font-weight: bold;
   font-size: 12px;
@@ -1836,7 +1845,7 @@ template {
     padding-top: 73px;
     padding-bottom: 33px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 47%;
         flex-basis: 47%;
   }
@@ -2125,7 +2134,7 @@ template {
   .footer__legal {
     grid-column: span 2;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -2340,7 +2349,7 @@ template {
     -ms-grid-row: 7;
     grid-row: 7;
   }
-  .footer__input {
+  .footer__input-group {
     width: 100%;
   }
   .footer__message {
