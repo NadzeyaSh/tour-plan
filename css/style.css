@@ -1519,6 +1519,7 @@ template {
 
 .footer__input {
   width: 100%;
+  color: #333333;
 }
 
 .footer__input-group {
@@ -1531,6 +1532,7 @@ template {
   margin-bottom: 23px;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  color: #333333;
 }
 
 .footer__button {
