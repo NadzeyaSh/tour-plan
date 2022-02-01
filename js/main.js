@@ -99,11 +99,11 @@ $(document).ready(function () {
       messages: {
         name: {
           required: "Please specify your name",
-          minlength: "At least 2 numbers required",
+          minlength: "At least 2 symbols required",
         },
         phone: {
           required: "Please enter your phone number",
-          minlength: "At least 12 symbols required",
+          minlength: "At least 11 numbers required",
         },
         email: {
           required: "We need your email address to contact you",

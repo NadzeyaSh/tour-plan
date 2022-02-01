@@ -499,6 +499,22 @@ template {
   color: #333333;
 }
 
+.search__input ::-webkit-input-placeholder {
+  color: #BDBDBD;
+}
+
+.search__input :-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.search__input ::-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.search__input ::placeholder {
+  color: #BDBDBD;
+}
+
 .search__button {
   position: absolute;
   top: 0;
@@ -1112,7 +1128,6 @@ template {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
-  color: #BDBDBD;
 }
 
 .search__button {
