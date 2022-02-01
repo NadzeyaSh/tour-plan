@@ -1582,6 +1582,15 @@ template {
   bottom: 0;
   z-index: 100;
   background-color: rgba(0, 143, 223, 0.39);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.modal__overlay--visible {
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal__dialog {
@@ -1596,6 +1605,15 @@ template {
   color: #ffffff;
   border-radius: 8px;
   z-index: 101;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.modal__dialog--visible {
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal__close {
@@ -1604,6 +1622,20 @@ template {
   right: 18px;
   text-decoration: none;
   cursor: pointer;
+}
+
+.modal__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .modal__title {
@@ -1628,7 +1660,6 @@ template {
 }
 
 .modal__button {
-  margin-right: 42px;
   padding: 18px 65px;
   font-weight: bold;
   font-size: 12px;
@@ -2350,6 +2381,9 @@ template {
   }
   .footer__item--mb-2 {
     margin-bottom: 8px;
+  }
+  .modal__close {
+    right: 35px;
   }
 }
 /*# sourceMappingURL=style.css.map */

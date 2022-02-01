@@ -7,6 +7,12 @@
     bottom: 0
     z-index: 100
     background-color: rgba(0, 143, 223, 0.39)
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.2s
+    &--visible
+      visibility: visible
+      opacity: 1
   &__dialog
     position: fixed
     top: 50%
@@ -18,12 +24,23 @@
     color: $light     
     border-radius: 8px
     z-index: 101
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.2s
+    &--visible
+      visibility: visible
+      opacity: 1
   &__close
     position: absolute
     top: 17px
     right: 18px
     text-decoration: none
     cursor: pointer
+  &__form
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
   &__title
     margin-bottom: 15px
     font-style: normal
@@ -40,7 +57,6 @@
     min-height: 123px
     margin-bottom: 15px
   &__button
-    margin-right: 42px
     padding: 18px 65px
     font-weight: bold
     font-size: 12px
