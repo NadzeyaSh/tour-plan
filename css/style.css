@@ -2500,5 +2500,9 @@ template {
   .modal__dialog {
     padding: 30px 30px;
   }
+  .modal__dialog--visible {
+    overflow-y: auto;
+    height: 300px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
