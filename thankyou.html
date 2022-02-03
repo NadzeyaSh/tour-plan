@@ -32,13 +32,13 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=2cb92b0d-62be-4b6b-9e88-acf9433711d5&lang=ru_RU"></script>
+    <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=2cb92b0d-62be-4b6b-9e88-acf9433711d5&lang=ru_RU"></script> -->
   </head>
   <body>
     <header class="navbar navbar--mobile-fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="index.html" class="logo">
+          <a href="index.html" class="logo" data-aos="fade-up-right">
             <img
               src="img/horizontal-logo.svg"
               class="logo__image"
@@ -166,7 +166,7 @@
             </div>
 
             <p class="thankyou-message">Our manager will call you soon.</p>
-            <a href="index.html" class="button button__return">Back</a>
+            <a href="index.html" class="button button-return">Back</a>
           </div>
           <!-- /.hotel-info__text -->
         </div>
@@ -355,7 +355,7 @@
               <!-- /.footer__input-group -->
               <textarea
                 class="input message footer__message"
-                cols="30"
+                cols="30" rows="6"
                 name="message"
                 placeholder="Message"
               ></textarea>
@@ -401,29 +401,38 @@
             data-keyboard="true"
             tabindex="-1"
           >
-            <input
-              type="text"
-              class="input modal__input"
-              placeholder="Your Full Name*"
-              name="name"
-              required
-              minlength="2"
-            />
-            <input
-              type="tel"
-              class="input modal__input phone"
-              placeholder="Phone Number*"
-              name="phone"
-              required
-              minlength="17"
-            />
-            <input
-              type="email"
-              class="input modal__input"
-              placeholder="Email*"
-              name="email"
-              required
-            />
+            <div class="modal__input-group">
+              <input
+                type="text"
+                class="input modal__input"
+                placeholder="Your Full Name*"
+                name="name"
+                required
+                minlength="2"
+              />
+            </div>
+            <!-- /.modal__input-group -->
+            <div class="modal__input-group">
+              <input
+                type="tel"
+                class="input modal__input phone"
+                placeholder="Phone Number*"
+                name="phone"
+                required
+                minlength="17"
+              />
+            </div>
+            <!-- /.modal__input-group -->
+            <div class="modal__input-group">
+              <input
+                type="email"
+                class="input modal__input"
+                placeholder="Email*"
+                name="email"
+                required
+              />
+            </div>
+            <!-- /.modal__input-group -->
             <textarea
               class="message modal__message"
               cols="30"

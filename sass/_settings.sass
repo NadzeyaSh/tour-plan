@@ -4,6 +4,19 @@ body
   font-family: 'Mulish', sans-serif
   background-color: $secondary
   color: $text-color
+li a:hover
+  color: $primary
+  border-bottom: 1px solid $secondary
+  text-decoration: none
+  transition: color 0.5s
+button
+  &:hover
+    box-shadow: 0 4px 10px $secondary
+    background-color: #F45C79
+    transition: opacity 0.3s ease-in-out
+a.footer__link > img
+  &:hover
+    box-shadow: 0 4px 10px $secondary
  
 .container
   max-width: 1110px
@@ -45,7 +58,7 @@ img
 label.invalid
   position: absolute  
   left: 0
-  top: -18px
+  top: -22px
   z-index: 999
   width: 100%
   padding: 6px

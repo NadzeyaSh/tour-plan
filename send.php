@@ -8,15 +8,35 @@ require 'phpmailer/Exception.php';
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
+$email = $_POST['email'];
 
-// Формирование самого письма
-$title = "Новое сообщение";
-$body = "
-<h2>Новое письмо</h2>
-<b>Имя:</b> $name<br>
-<b>Телефон:</b> $phone<br><br>
-<b>Сообщение:</b><br>$message
-";
+ // Формирование самого письма
+ if ($email) {
+    if ($name) {
+        $title = "Новый заказ Best Tour Plan";
+        $body = "
+        <h2>Поступил новый заказ</h2>
+        <b>Имя:</b> $name<br>
+        <b>Телефон:</b> $phone<br><br>
+        <b>Почта:</b> $email<br>
+        <b>Сообщение:</b><br>$message
+        ";
+    } else {
+        $title = "Новая подписка Best Tour Plan";
+        $body = "
+        <h2>Новая подписка</h2>
+        <b>Почта:</b> $email<br>
+        ";
+    }    
+} else {
+    $title = "Новое обращение Best Tour Plan";
+    $body = "
+    <h2>Новое обращение</h2>
+    <b>Имя:</b> $name<br>
+    <b>Телефон:</b> $phone<br><br>
+    <b>Сообщение:</b><br>$message
+    ";
+}   
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -42,7 +62,8 @@ try {
     // Отправка сообщения
     $mail->isHTML(true);
     $mail->Subject = $title;
-    $mail->Body = $body;    
+    $mail->Body = $body; 
+   
 
 // Проверяем отравленность сообщения
 if ($mail->send()) {$result = "success";} 
