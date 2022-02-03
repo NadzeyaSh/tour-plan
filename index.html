@@ -1063,64 +1063,63 @@
       <!-- /.container -->
     </footer>
     <div class="modal">
-      <div class="modal__overlay">
-        <div class="modal__dialog">
-          <a href="#" class="modal__close">
-            <img src="img/close.svg" alt="Icon: Close"
-          /></a>
-          <h3 class="modal__title">Booking</h3>
-          <form
-            action="send.php"
-            method="post"
-            class="form modal__form"
-            data-keyboard="true"
-            tabindex="-1"
-          >
-            <div class="modal__input-group">
-              <input
-                type="text"
-                class="input modal__input"
-                placeholder="Your Full Name*"
-                name="name"
-                required
-                minlength="2"
-              />
-            </div>
-            <!-- /.modal__input-group -->
-            <div class="modal__input-group">
-              <input
-                type="tel"
-                class="input modal__input phone"
-                placeholder="Phone Number*"
-                name="phone"
-                required
-                minlength="17"
-              />
-            </div>
-            <!-- /.modal__input-group -->
-            <div class="modal__input-group">
-              <input
-                type="email"
-                class="input modal__input"
-                placeholder="Email*"
-                name="email"
-                required
-              />
-            </div>
-            <!-- /.modal__input-group -->
-            <textarea
-              class="message modal__message"
-              cols="30"
-              name="message"
-              placeholder="Message"
-            ></textarea>
-            <button type="submit" class="button modal__button">Send</button>
-            <span class="modal__required">* Required Fields</span>
-          </form>
-        </div>
-        <!-- /.modal__dialog -->
-      </div>
+      <div class="modal__overlay"></div>
       <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="Icon: Close"
+        /></a>
+        <h3 class="modal__title">Booking</h3>
+        <form
+          action="send.php"
+          method="post"
+          class="form modal__form"
+          data-keyboard="true"
+          tabindex="-1"
+        >
+          <div class="modal__input-group">
+            <input
+              type="text"
+              class="input modal__input"
+              placeholder="Your Full Name*"
+              name="name"
+              required
+              minlength="2"
+            />
+          </div>
+          <!-- /.modal__input-group -->
+          <div class="modal__input-group">
+            <input
+              type="tel"
+              class="input modal__input phone"
+              placeholder="Phone Number*"
+              name="phone"
+              required
+              minlength="17"
+            />
+          </div>
+          <!-- /.modal__input-group -->
+          <div class="modal__input-group">
+            <input
+              type="email"
+              class="input modal__input"
+              placeholder="Email*"
+              name="email"
+              required
+            />
+          </div>
+          <!-- /.modal__input-group -->
+          <textarea
+            class="message modal__message"
+            cols="30"
+            name="message"
+            placeholder="Message"
+          ></textarea>
+          <button type="submit" class="button modal__button">Send</button>
+          <span class="modal__required">* Required Fields</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
     </div>
     <!-- /.modal -->
 
