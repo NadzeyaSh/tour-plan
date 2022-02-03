@@ -308,7 +308,7 @@
         <div class="packages-wrapper">
           <div class="packages__card">
             <img
-              class="packages__image"
+              class="packages__image packages__image--big"
               src="img/advisor-card-1.jpg"
               alt="Trip Advisor Card"
             />
@@ -375,7 +375,10 @@
                 </div>
                 <!-- /.packages price -->
 
-                <button class="button packages__button packages__button--big">
+                <button
+                  class="button packages__button packages__button--big"
+                  data-toggle="modal"
+                >
                   Book Now
                 </button>
               </div>
@@ -433,7 +436,9 @@
                 </div>
                 <!-- /.packages price -->
 
-                <button class="button packages__button">Book Now</button>
+                <button class="button packages__button" data-toggle="modal">
+                  Book Now
+                </button>
               </div>
               <!-- /.packages__booking -->
             </div>
@@ -489,7 +494,9 @@
                 </div>
                 <!-- /.packages price -->
 
-                <button class="button packages__button">Book Now</button>
+                <button class="button packages__button" data-toggle="modal">
+                  Book Now
+                </button>
               </div>
               <!-- /.packages__booking -->
             </div>
@@ -545,7 +552,9 @@
                 </div>
                 <!-- /.packages price -->
 
-                <button class="button packages__button">Book Now</button>
+                <button class="button packages__button" data-toggle="modal">
+                  Book Now
+                </button>
               </div>
               <!-- /.packages__booking -->
             </div>
@@ -601,7 +610,9 @@
                 </div>
                 <!-- /.packages price -->
 
-                <button class="button packages__button">Book Now</button>
+                <button class="button packages__button" data-toggle="modal">
+                  Book Now
+                </button>
               </div>
               <!-- /.packages__booking -->
             </div>
@@ -629,13 +640,16 @@
             data-aos="flip-left"
             data-aos-duration="2000"
           >
-            <input
-              type="email"
-              class="search__input newsletter__input"
-              placeholder="Your email address"
-              name="email"
-              required
-            />
+            <div class="newsletter__input-group">
+              <input
+                type="email"
+                class="search__input newsletter__input"
+                placeholder="Your email address"
+                name="email"
+                required
+              />
+            </div>
+            <!-- /.newsletter__input-group -->
             <button class="search__button">Send</button>
           </form>
         </div>
@@ -1045,29 +1059,38 @@
             data-keyboard="true"
             tabindex="-1"
           >
-            <input
-              type="text"
-              class="input modal__input"
-              placeholder="Your Full Name*"
-              name="name"
-              required
-              minlength="2"
-            />
-            <input
-              type="tel"
-              class="input modal__input phone"
-              placeholder="Phone Number*"
-              name="phone"
-              required
-              minlength="17"
-            />
-            <input
-              type="email"
-              class="input modal__input"
-              placeholder="Email*"
-              name="email"
-              required
-            />
+            <div class="modal__input-group">
+              <input
+                type="text"
+                class="input modal__input"
+                placeholder="Your Full Name*"
+                name="name"
+                required
+                minlength="2"
+              />
+            </div>
+            <!-- /.modal__input-group -->
+            <div class="modal__input-group">
+              <input
+                type="tel"
+                class="input modal__input phone"
+                placeholder="Phone Number*"
+                name="phone"
+                required
+                minlength="17"
+              />
+            </div>
+            <!-- /.modal__input-group -->
+            <div class="modal__input-group">
+              <input
+                type="email"
+                class="input modal__input"
+                placeholder="Email*"
+                name="email"
+                required
+              />
+            </div>
+            <!-- /.modal__input-group -->
             <textarea
               class="message modal__message"
               cols="30"

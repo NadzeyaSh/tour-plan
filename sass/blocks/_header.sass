@@ -45,8 +45,7 @@
 .search
   position: relative
   height: 40px
-  border-radius: 6px
-  overflow: hidden
+  // overflow: hidden
   &__input
     width: 350px
     height: 100%
@@ -54,23 +53,25 @@
     padding-right: 75px
     background: #F5FAFE
     border: none
+    border-radius: 6px
     font-size: 12px
     line-height: 15px
-    color: $text-color  
+    color: $text-color
+    outline: none  
     ::placeholder
       color: $footer-text-color
       font-size: 12px
-      line-height: 15px
-    
+      line-height: 15px    
   &__button
     position: absolute
     top: 0
     right: 0
-    width: 65px
+    min-width: 65px
+    max-width: 100px
     height: 100%
     background-color: $primary
     border: none
-    
+    border-radius: 0 6px 6px 0    
 .user
   display: flex
   align-items: center
