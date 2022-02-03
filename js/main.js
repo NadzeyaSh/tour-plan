@@ -86,6 +86,8 @@ $(document).ready(function () {
     var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
     $("body").css("overflow", "hidden");
+    $("body").css("padding-right", "17px");
+
     modalOverlay.addClass("modal__overlay--visible");
     modalDialog.addClass("modal__dialog--visible");
   }
