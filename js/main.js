@@ -89,7 +89,10 @@ $(document).ready(function () {
     var modalDialog = $(".modal__dialog");
     var modalWrapper = $(".modal__dialog-wrapper");
     $("body").css("overflow", "hidden");
-    $("body").css("padding-right", "17px");
+
+    if ($(window).width() >= "1200") {
+      $("body").css("padding-right", "17px");
+    }
 
     modalOverlay.addClass("modal__overlay--visible");
     modalDialog.addClass("modal__dialog--visible");
