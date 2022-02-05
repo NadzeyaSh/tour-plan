@@ -9,6 +9,13 @@ li a:hover
   border-bottom: 1px solid $secondary
   text-decoration: none
   transition: color 0.5s
+.user
+  &__name
+    &:hover
+      border-bottom: 1px dashed $footer-text-color
+      text-decoration: none
+      transition: color 0.5s
+      
 .button
   &:hover
     box-shadow: 0 4px 10px $secondary
@@ -18,6 +25,11 @@ a.footer__link > img
   &:hover
     box-shadow: 0 4px 10px $secondary
     border-radius: 50%
+img.user
+  &__avatar
+    &:hover
+      box-shadow: 0 4px 10px $footer-text-color
+      border-radius: 50%
  
 .container
   max-width: 1110px

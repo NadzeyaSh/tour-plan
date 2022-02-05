@@ -29,6 +29,18 @@
       gap: 6px
   
 @media (max-width: 992px) 
+  li a:hover
+    border-bottom: none
+  .user
+    &__name
+      &:hover
+        border: none
+        text-decoration: none
+        border-bottom: none
+  img.user
+    &__avatar
+      &:hover
+        box-shadow: none
   a.footer__link > img
     &:hover
       box-shadow: none
@@ -241,10 +253,11 @@
         &-visible   
           margin-bottom: 7px      
           flex-direction: column
-          align-items: center             
+          align-items: center
         &-hidden
           display: none
   .user
+    border-bottom: none
     &__name
       &--mobile
         &-visible
@@ -635,9 +648,9 @@
       min-width: 250px
     &__dialog
       padding: 30px 30px
-      &--visible
-        overflow-y: auto
-        height: 300px
+      // &--visible
+      //   overflow-y: auto
+      //   height: 300px
 
 
 

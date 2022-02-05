@@ -16,7 +16,7 @@ $(document).ready(function () {
   const sliderReviews = new Swiper(".reviews-slider", {
     // Optional parameters
     loop: true,
-    autoHeight: true,
+    autoHeight: false,
 
     // Navigation arrows
     navigation: {
@@ -77,25 +77,30 @@ $(document).ready(function () {
     if (e.keyCode == 27) {
       var modalOverlay = $(".modal__overlay");
       var modalDialog = $(".modal__dialog");
+      var modalWrapper = $(".modal__dialog-wrapper");
       $("body").css("overflow", "display");
       modalOverlay.removeClass("modal__overlay--visible");
       modalDialog.removeClass("modal__dialog--visible");
+      modalWrapper.removeClass("modal__dialog-wrapper--visible");
     }
   });
   function openModal() {
     var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
+    var modalWrapper = $(".modal__dialog-wrapper");
     $("body").css("overflow", "hidden");
     $("body").css("padding-right", "17px");
 
     modalOverlay.addClass("modal__overlay--visible");
     modalDialog.addClass("modal__dialog--visible");
+    modalWrapper.addClass("modal__dialog-wrapper--visible");
   }
   function closeModal(event) {
     event.preventDefault();
     var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
     $("body").css("overflow", "display");
+    $("body").css("padding-right", "0px");
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
   }
