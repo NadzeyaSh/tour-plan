@@ -120,8 +120,8 @@ $(document).ready(function () {
           minlength: "At least 11 numbers required",
         },
         email: {
-          required: "We need your email address to contact you",
-          email: "Your email address must be in the format of name@domain.com",
+          required: "Please enter your email address",
+          email: "Must be in the format of name@domain.com",
         },
       },
     });
